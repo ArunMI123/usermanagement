@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: user-svc
+  namespace: honda
+spec:
+  selector:
+    app: user 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
